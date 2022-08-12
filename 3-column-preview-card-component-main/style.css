@@ -90,3 +90,35 @@ button{
     color: hsl(0, 0%, 95%);
     border: solid 2px hsl(0, 0%, 95%);
 }
+
+@media only screen and (min-width: 1070px) {
+    main{
+        width: 1068px;
+        display: flex;
+        height: 480px;
+    }
+
+    div{
+        width: 356px;
+    }
+
+    #sedans{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    
+    #luxury{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    img, h1 {
+        margin-bottom: 40px;
+    }
+
+    p{
+        margin-bottom: 75px;
+    }
+}
