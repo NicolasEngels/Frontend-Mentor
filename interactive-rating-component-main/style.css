@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main{
+    background: rgb(18,20,23);
+    background: linear-gradient(0deg, rgba(18,20,23,1) 0%, rgba(37,45,55,1) 100%);
+    width: 337px;
+    border-radius: 12px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#rating{
+    width: 85%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p{
+    font-size: 14px;
+}
+
+#star{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: hsl(213, 19%, 22%);
+}
+
+#buttons{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-between;
+}
+
+button{
+    border: 0;
+    border-radius: 50px;
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(217, 12%, 63%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#submit{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    width: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#state{
+    display: none;
+}
