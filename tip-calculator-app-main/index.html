@@ -13,34 +13,46 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
+  <script src="jquery.min.js"></script>
+  <script src="java.js"></script>
 </head>
 <body>
   <h1>SPLI<br>TTER</h1>
   <main>
-    <h2>Bill</h2>
-    <input type="texte "id="prix" name="prix" placeholder="ex : 142.55"></input>
+    <div id="calcul">
+      <h2>Bill</h2>
+      <input type="texte "id="prix" name="prix" placeholder="ex : 142.55"></input>
 
-    <h2>Select Tip %</h2>
-    <div id="pourcentage">
-      <div id="5" class="case">5%</div>
-      <div id="10" class="case">10%</div>
-      <div id="15" class="case">15%</div>
-      <div id="25" class="case">25%</div>
-      <div id="50" class="case">50%</div>
-      <input type="texte" id="custom" placeholder="Custom"></input>
+      <h2>Select Tip %</h2>
+      <div id="pourcentage">
+        <button id="5" class="case">5%</button>
+        <button id="10" class="case">10%</button>
+        <button id="15" class="case">15%</button>
+        <button id="25" class="case">25%</button>
+        <button id="50" class="case">50%</button>
+        <input type="texte" id="custom" placeholder="Custom"></input>
+      </div>
+
+      <h2>Number of People</h2>
+      <input type="texte "id="nbPeople" name="nbPeople" placeholder="ex : 5"></input>
     </div>
 
-    <h2>Number of People</h2>
-    <input type="texte "id="nbPeople" name="nbPeople" placeholder="ex : 5"></input>
-
     <div id="result">
-      <h3>Tip Amount</h3>
-      <p>/ person</p>
+      <div id="d1">
+        <h3>Tip Amount</h3>
+        <p>/ person</p>
+      </div>
 
-      <h3>Total</h3>
-      <p>/ person</p>
+      <div id="d2"><span id="tip"></span></div>
 
-      <button id="reset">Reset</button>
+      <div id="d3">
+        <h3>Total</h3>
+        <p>/ person</p>
+      </div>
+
+      <div id="d4"><span id="tip"></span></div>
+
+      <div id="d5"><button id="reset">Reset</button></div>
     </div>
   </main>
 </body>
