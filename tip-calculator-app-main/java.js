@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
-    let rate = 0.15;
+    let rate = 0;
     let bill = 142.55;
-    let people = 5;
+    let people = 1;
+
+    let tip = 0;
+    let total = 0;
+
     showResult(bill, rate, people);
 
     $("#5").click(function(){
@@ -14,7 +18,12 @@ $(document).ready(function(){
         bill = $("#prix").val();
         rate = 0.05; 
         people = $("#nbPeople").val(); 
-        showResult(bill, rate, people);
+
+        tip = (bill * rate) / people;
+        total = (bill / people) + tip;
+
+        document.getElementById("tip").innerHTML=(tip).toFixed(2);
+        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#10").click(function(){
@@ -26,7 +35,12 @@ $(document).ready(function(){
         bill = $("#prix").val();
         rate = 0.1; 
         people = $("#nbPeople").val(); 
-        showResult(bill, rate, people); 
+
+        tip = (bill * rate) / people;
+        total = (bill / people) + tip;
+
+        document.getElementById("tip").innerHTML=(tip).toFixed(2);
+        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#15").click(function(){
@@ -38,7 +52,12 @@ $(document).ready(function(){
         bill = $("#prix").val();
         rate = 0.15;
         people = $("#nbPeople").val(); 
-        showResult(bill, rate, people);  
+
+        tip = (bill * rate) / people;
+        total = (bill / people) + tip;
+
+        document.getElementById("tip").innerHTML=(tip).toFixed(2);
+        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#25").click(function(){
@@ -50,7 +69,12 @@ $(document).ready(function(){
         bill = $("#prix").val();
         rate = 0.25;  
         people = $("#nbPeople").val(); 
-        showResult(bill, rate, people);
+
+        tip = (bill * rate) / people;
+        total = (bill / people) + tip;
+
+        document.getElementById("tip").innerHTML=(tip).toFixed(2);
+        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#50").click(function(){
@@ -62,18 +86,14 @@ $(document).ready(function(){
         bill = $("#prix").val();
         rate = 0.5; 
         people = $("#nbPeople").val(); 
-        showResult(bill, rate, people);
+
+        tip = (bill * rate) / people;
+        total = (bill / people) + tip;
+
+        document.getElementById("tip").innerHTML=(tip).toFixed(2);
+        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 })
-
-
-
-
-
-let rate = 0.1;
-let bill = 100;
-let people = 2;
-
 
 function changeColor (rate){
     document.getElementById(rate).style.color = 'hsl(183, 100%, 15%)';
@@ -95,7 +115,7 @@ function calculTotal (bill, rate, people){
 
 function showResult (bill, rate, people){
     let tip = calculTip(bill, rate);
-    console.log("tip par personne : " + (tip/people).toFixed(2));
+    console.log("tip par personne : " + (tip/people));
     document.getElementById("tip").innerHTML=(tip/people).toFixed(2);
 
     let total = calculTotal(bill,rate, people);
