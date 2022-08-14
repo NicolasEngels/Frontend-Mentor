@@ -1,0 +1,21 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+h1{
+    margin: auto;
+    text-transform: uppercase;
+    width: 125px;
+    color: hsl(186, 14%, 43%);
+    letter-spacing: 5px;
+}
+
+main{
+    background-color: white;
+    width: 325px;
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 25px;
+}
