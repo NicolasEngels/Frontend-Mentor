@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#d6").hide();
 
     let rate = 0;
     let bill = 0;
@@ -15,15 +16,7 @@ $(document).ready(function(){
         resetColor("15");
         resetColor("25");
         resetColor("50");
-        bill = $("#prix").val();
         rate = 0.05; 
-        people = $("#nbPeople").val(); 
-
-        tip = (bill * rate) / people;
-        total = (bill / people) + tip;
-
-        document.getElementById("tip").innerHTML=(tip).toFixed(2);
-        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#10").click(function(){
@@ -32,15 +25,7 @@ $(document).ready(function(){
         resetColor("15");
         resetColor("25");
         resetColor("50");
-        bill = $("#prix").val();
         rate = 0.1; 
-        people = $("#nbPeople").val(); 
-
-        tip = (bill * rate) / people;
-        total = (bill / people) + tip;
-
-        document.getElementById("tip").innerHTML=(tip).toFixed(2);
-        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#15").click(function(){
@@ -49,15 +34,7 @@ $(document).ready(function(){
         resetColor("5");
         resetColor("25");
         resetColor("50");
-        bill = $("#prix").val();
         rate = 0.15;
-        people = $("#nbPeople").val(); 
-
-        tip = (bill * rate) / people;
-        total = (bill / people) + tip;
-
-        document.getElementById("tip").innerHTML=(tip).toFixed(2);
-        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#25").click(function(){
@@ -66,15 +43,7 @@ $(document).ready(function(){
         resetColor("15");
         resetColor("5");
         resetColor("50");
-        bill = $("#prix").val();
         rate = 0.25;  
-        people = $("#nbPeople").val(); 
-
-        tip = (bill * rate) / people;
-        total = (bill / people) + tip;
-
-        document.getElementById("tip").innerHTML=(tip).toFixed(2);
-        document.getElementById("total").innerHTML=(total).toFixed(2);
     })
 
     $("#50").click(function(){
@@ -83,9 +52,33 @@ $(document).ready(function(){
         resetColor("15");
         resetColor("25");
         resetColor("5");
+        rate = 0.5;
+    })
+
+    $("#reset").click(function(){
+        $("#d6").hide();
+        $("#d5").show();
+        bill = 0;
+        rate = 0; 
+        people = 1;
+        resetColor("10");
+        resetColor("15");
+        resetColor("25");
+        resetColor("5");
+        resetColor("50");
+
+        document.getElementById("tip").innerHTML="0.00";
+        document.getElementById("total").innerHTML="0.00";
+        $("#prix").val('');
+        $("#nbPeople").val('');
+    })
+
+    $("#go").click(function(){
+        $("#d5").hide();
+        $("#d6").show();
+
         bill = $("#prix").val();
-        rate = 0.5; 
-        people = $("#nbPeople").val(); 
+        people = $("#nbPeople").val();
 
         tip = (bill * rate) / people;
         total = (bill / people) + tip;
