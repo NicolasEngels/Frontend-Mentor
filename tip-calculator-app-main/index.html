@@ -15,33 +15,32 @@
 
 </head>
 <body>
-  <h1>SPLI</h1>
-  <h1>TTER</h1>
+  <h1>SPLI<br>TTER</h1>
   <main>
     <h2>Bill</h2>
-    <input type="texte "id="prix" name="prix" ></input>
+    <input type="texte "id="prix" name="prix" placeholder="ex : 142.55"></input>
 
     <h2>Select Tip %</h2>
     <div id="pourcentage">
-      <div>5%</div>
-      <div>10%</div>
-      <div>15%</div>
-      <div>25%</div>
-      <div>50%</div>
-      <div>Custom</div>
+      <div id="5" class="case">5%</div>
+      <div id="10" class="case">10%</div>
+      <div id="15" class="case">15%</div>
+      <div id="25" class="case">25%</div>
+      <div id="50" class="case">50%</div>
+      <input type="texte" id="custom" placeholder="Custom"></input>
     </div>
 
     <h2>Number of People</h2>
-    <input type="texte "id="nbPeople" name="nbPeople" ></input>
+    <input type="texte "id="nbPeople" name="nbPeople" placeholder="ex : 5"></input>
 
-    <div>
+    <div id="result">
       <h3>Tip Amount</h3>
       <p>/ person</p>
 
       <h3>Total</h3>
       <p>/ person</p>
 
-      <button>Reset</button>
+      <button id="reset">Reset</button>
     </div>
   </main>
 </body>
