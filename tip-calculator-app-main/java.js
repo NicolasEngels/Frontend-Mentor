@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     let rate = 0;
-    let bill = 142.55;
+    let bill = 0;
     let people = 1;
 
     let tip = 0;
