@@ -42,6 +42,7 @@ input{
     margin-bottom: 15px;
     padding: 5px;
     padding-right: 15px;
+    color: hsl(183, 100%, 15%);
 }
 
 input:hover, #custom:hover{
@@ -73,7 +74,6 @@ input:hover, #custom:hover{
     width: 131px;
     border: solid 2px hsl(189, 41%, 97%); ;
     background-color: hsl(189, 41%, 97%);
-    color: hsl(184, 14%, 56%);
     margin-bottom: 0;
 }
 

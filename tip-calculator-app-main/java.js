@@ -71,6 +71,7 @@ $(document).ready(function(){
         document.getElementById("total").innerHTML="0.00";
         $("#prix").val('');
         $("#nbPeople").val('');
+        $("#custom").val('');
     })
 
     $("#go").click(function(){
@@ -79,6 +80,11 @@ $(document).ready(function(){
 
         bill = $("#prix").val();
         people = $("#nbPeople").val();
+
+        if($("#custom").val()!=""){
+            rate = $("#custom").val() / 100;
+            console.log(rate);
+        }
 
         tip = (bill * rate) / people;
         total = (bill / people) + tip;
@@ -108,11 +114,9 @@ function calculTotal (bill, rate, people){
 
 function showResult (bill, rate, people){
     let tip = calculTip(bill, rate);
-    console.log("tip par personne : " + (tip/people));
     document.getElementById("tip").innerHTML=(tip/people).toFixed(2);
 
     let total = calculTotal(bill,rate, people);
-    console.log("total par personne : " + total.toFixed(2));
     document.getElementById("total").innerHTML=total.toFixed(2);
 }
 
