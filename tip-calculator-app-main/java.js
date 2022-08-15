@@ -83,7 +83,6 @@ $(document).ready(function(){
 
         if($("#custom").val()!=""){
             rate = $("#custom").val() / 100;
-            console.log(rate);
         }
 
         tip = (bill * rate) / people;
