@@ -1,0 +1,110 @@
+html{
+    background-color: lightgray;
+}
+
+body{
+    width: 375px;
+    padding: 0px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border: solid;
+}
+
+header{
+    padding: 30px;
+    text-align: left;
+}
+
+nav{
+    display: none;
+}
+
+h2{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    font-weight: lighter;
+    width: 350px;
+    line-height: 50px;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    width: 320px;
+    margin: auto;
+}
+
+#human{
+    padding-top: 100px;
+    margin-top: -4px;
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+    height: 451px;
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+button{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+    text-transform: uppercase;
+    border: solid 1px white;
+    margin-top: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: hsl(270, 9%, 17%);
+}
+
+#imdDif{
+    margin-left: 251px;
+    margin-top: -150px;
+}
+
+#wework{
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: auto;
+    width: 290px;
+    padding: 40px 20px;
+    background-color: hsl(270, 9%, 17%);
+    color: white;
+}
+
+#different #wework h2{
+    font-size: 200;
+    margin-bottom: 15px;
+}
+
+#hr{
+    width: 150px;
+    columns: hsl(270, 9%, 17%);
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+#different h2{
+    margin-bottom: 70px;
+}
+
+#different h3{
+    font-size: x-large;
+}
+
+#different p{
+    margin-bottom: 70px;
+}
