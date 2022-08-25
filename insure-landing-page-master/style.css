@@ -8,7 +8,6 @@ body{
     margin: auto;
     background-color: white;
     text-align: center;
-    border: solid;
 }
 
 header{
@@ -16,8 +15,23 @@ header{
     text-align: left;
 }
 
+#open{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: white;
+    margin-top: -7px;
+    margin-bottom: 0;
+    float: right;
+    cursor: pointer;
+}
+
 nav{
     display: none;
+}
+
+main{
+    padding-bottom: 160px;
 }
 
 h2{
@@ -42,7 +56,7 @@ p{
 #human{
     padding-top: 100px;
     margin-top: -4px;
-    background-color: hsl(270, 9%, 17%);
+    background-color: hsl(256, 26%, 20%);
     color: white;
     height: 451px;
     background-image: url(./images/bg-pattern-intro-left-mobile.svg);
@@ -52,7 +66,7 @@ p{
 
 button{
     font-family: 'Karla', sans-serif;
-    background-color: hsl(270, 9%, 17%);
+    background-color: hsl(256, 26%, 20%);
     color: white;
     text-transform: uppercase;
     border: solid 1px white;
@@ -62,11 +76,12 @@ button{
     width: 150px;
     height: 40px;
     cursor:pointer;
+    margin-bottom: 30px;
 }
 
 button:hover{
     background-color: white;
-    color: hsl(270, 9%, 17%);
+    color: hsl(256, 26%, 20%);
 }
 
 #imdDif{
@@ -81,18 +96,20 @@ button:hover{
     margin: auto;
     width: 290px;
     padding: 40px 20px;
-    background-color: hsl(270, 9%, 17%);
+    background-color: hsl(256, 26%, 20%);
     color: white;
 }
 
 #different #wework h2{
-    font-size: 200;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    width: 280px;
 }
 
 #hr{
     width: 150px;
-    columns: hsl(270, 9%, 17%);
+    color: hsl(270, 9%, 17%);
     margin-top: -25px;
     margin-bottom: 35px;
 }
@@ -102,9 +119,53 @@ button:hover{
 }
 
 #different h3{
-    font-size: x-large;
+    font-size: 30px;
 }
 
 #different p{
     margin-bottom: 70px;
+}
+
+footer{
+    background-color: hsl(0, 0%, 98%);
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'Karla', sans-serif;
+    padding-bottom: 75px;
+    text-transform: uppercase;
+}
+
+#logo2{
+    margin-top: 85px;
+    margin-bottom: 25px;
+}
+
+#reseau{
+    width: 180Px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#reseau img{
+    width: 30px;
+    cursor: pointer;
+}
+
+#hr2{
+    width: 331px;
+    margin: 35px 22px;
+    columns: hsl(216, 30%, 68%);
+}
+
+h4{
+    color: hsl(216, 30%, 68%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer p{
+    color: black;
+    font-weight: bold;
 }
