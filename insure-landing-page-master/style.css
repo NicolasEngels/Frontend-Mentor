@@ -16,11 +16,11 @@ header{
 }
 
 #open{
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     padding: 0;
     background-color: white;
-    margin-top: -7px;
+    margin-top: -8px;
     margin-bottom: 0;
     float: right;
     cursor: pointer;
