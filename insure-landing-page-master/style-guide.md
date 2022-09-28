@@ -43,3 +43,35 @@ You can use either use the social icons provided or load in a font icon library.
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+
+
+position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: hsl(256, 26%, 20%);
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 375px;
+    text-align: center;
+    transition: 0.3s;
+
+a{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 22px;
+    padding: 19px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: solid 2px hsl(256, 26%, 20%);
+}
